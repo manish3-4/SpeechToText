@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../lib/AuthContext';
-
 const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -106,6 +105,7 @@ const Login = () => {
               className="group rounded-full relative w-6xs flex justify-center py-2 px-4 border border-transparent text-sm font-medium  text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               SIGN IN
+                
             </button>
           </div>
         </div>

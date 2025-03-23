@@ -183,9 +183,9 @@ function App() {
                 </div>
             </div>
         </div>
-        <div className="h-50 overflow-scroll border rounded-lg border-none bg-green-200 w-full max-w-md">
-          <div className="flex justify-between items-center p-4">
-            <h2 className="text-xl font-semibold">Text</h2>
+        <div className="h-50 overflow-y-scroll border rounded-lg border-none bg-green-200 w-full max-w-md">
+          <div className="flex justify-between items-center p-4  container ">
+            <h2 className="text-xl font-serif ">Text</h2>
             <button
               onClick={async () => {
                 try {
@@ -210,7 +210,7 @@ function App() {
               Clear History
             </button>
           </div>
-          <ul className="mt-2 space-y-2">
+          <ul className="-mt-4 p-4 space-y-2">
             {transcriptions.map((t, index) => (
               <li key={index} className="bg-white p-3 shadow rounded-lg border">
                 {t.text}
